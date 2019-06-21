@@ -187,7 +187,8 @@ var provinceLayer = {
       mouseout: resetHighlight
     });
     layer.on('click', function (e) {
-      alert(layer.feature.properties.district)
+      window.location.replace("results/district" + "/" + layer.feature.properties.pradesh_no + "/" 
+      + feature.properties.district + "/");
           });
 }
 
